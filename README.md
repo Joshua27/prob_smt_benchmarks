@@ -60,8 +60,8 @@ ProB's SMT solver:
         - glucose\_restart\_stack\_avg\_factor(1.4). % For factor f, the last stack size needs to be larger than f * recentSizes.avg() to empty the recent LBD queue.
     - reduction of learned clauses:
         - discard\_clause\_greater\_lbd(5). % Maximum LBD score for learned clauses to not be dropped.
-        - discard\_learned\_clauses\_frequency\_constant(20000).
-        - discard\_learned\_clauses\_constant\_factor(500). % Remove half of the learned clauses every "frequency\_constant + constant\_factor * x" conflicts.
+        - discard\_learned\_clauses\_frequency\_constant(4000).
+        - discard\_learned\_clauses\_constant\_factor(300). % Remove half of the learned clauses every "frequency\_constant + constant\_factor * x" conflicts.
 - Integration of Z3 in ProB
     - we use the same settings as in `ProB_Preferences.pl`
     - for Z3 itself we set the following parameters:
